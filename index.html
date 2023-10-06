@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <main>
+    <p class="attribution">Challenge by <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db">Frontend Mentor</a>.</p>
+    <section>
+      <p id="adviceID"></p>
+      <p id="advice"></p>
+      <!-- -->
+      <picture>
+        <source media="(max-width: 600px)" srcset="./images/pattern-divider-mobile.svg">
+        <img src="./images/pattern-divider-desktop.svg" alt="pattern divider">
+      </picture>
+      <div class="button" onclick="getAdvice()"></div>
+    </section>`
+    <p class="attribution"> Coded by <a href="https://github.com/doougg26">Douglas C. Rodrigues</a>.</p>
+  </main>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>
